@@ -1,0 +1,162 @@
+body
+{
+    margin: 0%;
+    background-color: rgb(253, 250, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.logo
+{
+    display: flex;
+    flex: 2;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo
+    {
+        visibility: hidden;
+        overflow: hidden;       
+    }
+
+    .navbarcontainer
+    {
+        height: auto;
+    }
+  }
+
+.navbarcontainer
+{
+display: flex;
+background-color: wheat;
+box-shadow: gray 0px 10px 10px;
+position: fixed;
+width: 100%;
+z-index: 20;
+top: 0;
+justify-content: flex-start;
+
+}
+
+.logo p
+{
+
+    text-align: start;
+    font-size: large;
+    font-family: fantasy;
+}
+.logo img
+{
+    margin-left: 10px;
+    max-width: 60px;
+    max-height: 40px;
+    padding: 10px;
+}
+
+
+.navbaritem
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbaritem a
+{
+    
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;  
+}
+
+.navbarcontainer a:hover
+{
+
+    background-color: slategray;
+    color: white;
+    transition: 0.5s;
+}
+
+.comingsooncontainer
+{
+    margin-top: 120px;
+    background-color: white;
+    box-shadow: gray 0px 10px 10px;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.comingsooncontainer video
+{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.comingsooncontainer img
+{
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.comingsooncontaienr img:hover
+{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+.containerrow
+{
+    display: flex;
+}
+
+.containercolumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.centertext
+{
+    text-align: center;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footeritem
+{
+    justify-content: space-evenly;
+}
+
+.footeritem a
+{
+    text-decoration: none;
+    color: white;
+}
+.bgcolorblack
+{
+    background-color: rgb(37, 37, 37);
+}
+
+.textcolorwhite
+{
+    color: white;
+}

@@ -1,0 +1,241 @@
+body
+{
+
+    margin: 0%;
+    margin-top: 120px;
+    background-color: rgb(253, 250, 239);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+.containerrow
+{
+    display: flex;
+}
+
+.containercolumn
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerwrap
+{
+    flex-wrap: wrap;
+}
+
+
+.navbarcontainer
+{
+display: flex;
+background-color: wheat;
+box-shadow: gray 0px 10px 10px;
+position: fixed;
+width: 100%;
+z-index: 20;
+top: 0;
+justify-content: flex-start;
+
+}
+
+.logo p
+{
+
+    text-align: start;
+    font-size: large;
+    font-family: fantasy;
+}
+.logo img
+{
+    margin-left: 10px;
+    max-width: 60px;
+    max-height: 40px;
+    padding: 10px;
+}
+
+
+.navbaritem
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbaritem a
+{
+    
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;  
+}
+
+.navbarcontainer a:hover
+{
+
+    background-color: slategray;
+    color: white;
+    transition: 0.5s;
+}
+
+.logo
+{
+    display: flex;
+    flex: 2;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo
+    {
+        visibility: hidden;
+        overflow: hidden;
+        
+    }
+  }
+
+
+.box
+{
+    box-shadow: 5px 5px 5px gray;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.justifyevenly
+{
+    justify-content: space-evenly;
+}
+
+
+.menucontainer
+{
+    width: 70%;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuitemcontainer
+{
+    background-color: wheat;
+    margin: 20px;
+
+}
+
+.menuitemcontainer p
+{
+    text-align: center;
+}
+
+.menutitemcontainer button
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuitemcontainer img
+{
+    max-width: 200px;
+}
+
+.menuitemcontainer img:hover
+{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+.padding10px
+{
+    padding: 10px;
+}
+
+
+
+
+.orderbtnlbl
+{
+    display: flex;
+    right: 10px;
+    left: auto;
+    position: fixed;
+    border-radius: 10px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: white;
+    border: solid black;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 10;
+    
+
+}
+
+.orderbtnlbl:hover
+{
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.ordercontainer
+{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black;
+    visibility: hidden;
+}
+
+.checkboxhack
+{
+    z-index: 10;
+    position: fixed;
+    right: 0;
+}
+
+.checkboxhack:checked ~.ordercontainer
+{
+    visibility: visible;
+    
+}
+
+.centerflexitem
+{
+    justify-content: center;
+}
+
+.footeritem
+{
+    justify-content: space-evenly;
+}
+
+.footeritem a
+{
+    text-decoration: none;
+    color: white;
+}
+.bgcolorblack
+{
+    background-color: rgb(37, 37, 37);
+}
+
+.textcolorwhite
+{
+    color: white;
+}
